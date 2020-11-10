@@ -1,9 +1,11 @@
 .container {
     display:grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas fr = fração, dependendo do tamanho do grid*/
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fr = fração, dependendo do tamanho da area do grid*/
     /*grid-template-rows: 100px 200px 50px;  altura das linhas */
     /*grid-column-gap:10px; espaçamento entre colunas */
     /*grid-row-gap: 10px; espaçamentro entre linhas */
+    grid-auto-rows: minmax(50px, auto); /* atribui uma altura para todas as linhas, 
+    utilizando a função minmax ele permite passar o tamanho minino e maximo qiue essa linha pode ter */ 
     gap:10px 10px; /*espaçamento entre linhas e colunas*/
 }
 .item{
