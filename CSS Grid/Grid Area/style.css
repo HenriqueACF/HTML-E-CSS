@@ -10,8 +10,9 @@
     gap:10px; /*espaçamento entre linhas e colunas*/
 
     grid-template-areas: 
-        "header  header header ads"
-        "menu  menu content content"
+        "header  header header header"
+        "menu  content content content"
+        "ads  content content content"
         "footer footer footer footer"
     ;
 }
@@ -61,4 +62,15 @@ footer{
 }
 .ad{
     grid-area:ads;
+}
+/* Responsividade */
+@media (max-width:750px){
+    .container{
+        grid-template-areas: 
+            "header header header header"
+            "menu menu menu menu"
+            "content content content content"
+            "footer footer footer ads"
+        ;
+    }
 }
